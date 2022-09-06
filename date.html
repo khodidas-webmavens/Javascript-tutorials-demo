@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-script variable</title>
+</head>
+<body>
+
+    <h1 id="result"> </h1>
+    <button onclick="getdate()">Date</button>
+    <button onclick="year()">year</button>
+    <button onclick="month()">month</button>
+    <button onclick="hour()">hour</button>
+    <button onclick="toDate()">date</button>
+    <button onclick="day()">day</button>
+    <button onclick="minutes()">minutes</button>
+    <button onclick="time()">time</button>
+    <button onclick="second()">seconds</button>
+    <button onclick="milisecond()">mili-seconds</button>
+    
+    
+
+</body>
+<script type="text/javascript">
+
+    var date = new Date();
+    function getdate(){
+        document.getElementById('result').innerText = date; 
+    }
+    function year(){
+        document.getElementById('result').innerText = date.getFullYear();
+    }
+    function month(){
+        var month = ["January","February","March","April","May","June","July","August",
+                        "September","October","November","December"]
+        document.getElementById('result').innerText = month[date.getMonth()];
+  
+        //  simple form ex.4 5 6 7 8 9
+        // document.getElementById('result').innerText = da  te.getMonth();
+    }
+    function hour(){
+        document.getElementById('result').innerText = date.getHours();
+    }
+    function toDate(){
+        document.getElementById('result').innerText = date.getDate();
+    }
+    function day(){
+
+        var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        document.getElementById('result').innerText = day[date.getDay()];
+    }
+    function minutes(){
+        document.getElementById('result').innerText = date.getMinutes();
+    }
+    function time(){
+        document.getElementById('result').innerText = date.getTime();
+    }
+    function second(){
+        document.getElementById('result').innerText = date.getSeconds();
+    }
+    function milisecond(){
+        document.getElementById('result').innerText = date.getMilliseconds();
+    }
+        
+</script>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-script operators </title>
+</head>
+<body>
+   
+    <h3 id="addition"></h3>
+    <h3 id="subtraction"></h3>
+    <h3 id="multiplication"></h3>
+    <h3 id="division"></h3>
+    <h3 id="Modulus"></h3>
+    <h3 id="Incrementoperator"></h3>
+    <h3 id="Decrementoperator"></h3>
+    <h3 id="ComparisonOperators"></h3>
+    <h3 id="LogicalOperators"></h3>
+    <h3 id="TernaryOperators"></h3>
+    <h3 id="AssignmentOperators"></h3>
+
+    
+
+    
+
+</body>
+<script type="text/javascript">
+
+    // diffrent type of operators 
+
+    // Arithmetic Operators
+    // addition
+    var x = 12;
+    var y = 10;
+    var z = x + y;
+    document.getElementById("addition").innerHTML = z;
+
+
+    // subtraction
+    var x = 125;
+    var y = 65;
+    var z = x - y;
+
+    document.getElementById("subtraction").innerHTML = z;
+
+
+    // multiplication
+    var x = 125;
+    var y = 65;
+    var z = x * y;
+
+    document.getElementById("multiplication").innerHTML = z;
+
+    // division
+    var x = 125;
+    var y = 12;
+    var z = x / y;
+
+    document.getElementById("division").innerHTML = z;
+
+    // Modulus
+    var x = 125;
+    var y = 12;
+    var z = x % y;
+
+    document.getElementById("Modulus").innerHTML = z;
+
+    // Increment operator
+
+    var x =122;
+    x++;
+
+    document.getElementById("Incrementoperator").innerHTML=x;
+
+    // Increment operator
+
+    var x =122;
+    x--;
+
+    document.getElementById("Decrementoperator").innerHTML=x;
+
+
+    // Comparison Operators
+ 
+    //  ==	 Compares the equality of two operands without considering type.
+    //  ===	 Compares equality of two operands with type.
+    //  !=	 Compares inequality of two operands.
+    //  >	 Returns a boolean value true if the left-side value is greater than the right-side value; otherwise, returns false.
+    //  <	 Returns a boolean value true if the left-side value is less than the right-side value; otherwise, returns false.
+    //  >=	 Returns a boolean value true if the left-side value is greater than or equal to the right-side value; otherwise, returns false.
+    //  <=	 Returns a boolean value true if the left-side value is less than or equal to the right-side value; otherwise, returns false.
+
+    var x = 12;
+    var y = 11;
+    var z = x >= y;
+    document.getElementById("ComparisonOperators").innerHTML = z;
+
+
+    // Logical Operators  &&(and) ,||(or)
+
+    var x = false;
+    var y = true;
+    var z = x && y;
+    // var z = x || y;
+    document.getElementById("LogicalOperators").innerHTML = z;
+       
+
+    // Ternary Operators  condition ? "true" : "false"
+
+    var x = 5;
+    var y = 6;
+    var z;
+
+    z = x > y ? "yes" : "no"
+    
+    document.getElementById("TernaryOperators").innerHTML = z;
+
+    // Assignment Operators
+    
+    var x = 5;
+    var y = 8;
+
+    // y = y + x; y = 8 + 5;
+
+    y *= x;
+
+    document.getElementById("AssignmentOperators").innerHTML=y;
+
+</script>
+</html>

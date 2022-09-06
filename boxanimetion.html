@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box - animation in javascript</title>
+    <style>
+        .yello{
+            margin-top: 30px;
+            width: 420px;
+            height: 420px;
+            background-color: yellow;
+            position: relative;
+        }
+        #red{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;        
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="move()">click</button>
+    <div class="yello">
+        <div id="red">
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+    function move(){
+        var red = document.getElementById('red');
+        var poe = 0;
+        var anim = setInterval(animat,5);
+
+        function animat(){
+            if(poe ==370){
+                clearInterval(anim);
+            }else{
+
+                poe++;
+                red.style.top = poe + "px";
+                red.style.left = poe + "px";
+            }
+        }
+    }
+
+</script>
+</html>

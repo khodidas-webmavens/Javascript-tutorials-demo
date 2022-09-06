@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Show and hide password in javascript</title>
+    <style>
+        form{
+            width: 350px;
+            margin: auto;
+        }
+        div{
+            margin: 5px;
+        }
+        label{
+            width: 200px;
+            display: block;
+            float: left;
+            font-size: 20px;
+        }
+        .clear{
+            clear: both;
+        }
+        button{
+            width: auto;
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            box-shadow: 0px 0px 2px 1px gray;
+        }
+        #alert{
+            color: red;
+        }
+    </style>
+  </head>
+  <body>
+    
+    <form action="#" method="post" onsubmit="validate()">
+        <h1>login Form</h1>
+        <div>
+            <label for="username">username</label>
+            <input id="username" type="text" name="username">
+            
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="confirm_password" id="password">
+            
+        </div>
+        <div>
+            <label>confirm password</label>
+            <input type="password" name="confirm_password" id="confirm_password" onkeyup="check(this)">
+            <br>
+            <error id="alert"> </error>
+            
+        </div>
+        <div>
+            <button type="button">submit</button>
+           
+        </div>
+    </form>
+    
+  </body>
+  <script type="text/javascript">
+      var password = document.getElementById('password')
+      var flag = 1; //1 -> no error | 0 -> yes error
+      function check(elem) {
+          if (elem.value.length > 0) {
+              if (elem.value != password.value) {
+                  document.getElementById('alert').innerHTML = "conform password dose not match"
+                  flag = 0;
+              }else{
+                document.getElementById('alert').innerHTML = "";
+                flag = 1;
+              }
+          }else{
+            document.getElementById('alert').innerHTML = "Enter conform password";
+            flag = 0;
+          }
+      }
+      function validate(){
+        if (flag == 1) {
+            return true;
+        } else {
+            return false;
+        }
+      }
+
+  </script>
+</html>

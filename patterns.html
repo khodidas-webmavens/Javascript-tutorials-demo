@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>patterns program</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+
+    var row = prompt("enter number you have printed loop")
+
+    // calling row when user enter number
+    printPatterns(row);
+
+
+    // declare and define
+    function printPatterns(row){
+       for(var i = 1; i <= row; i++){
+           for(var j = 1; j<=i; j++){
+            document.write("*");
+            }
+           document.write("<br>");
+       } // tow side patern design to try its 
+       for(var i = row; i >= 1; i--){
+           for(var j = 1; j<=i; j++){
+            document.write("*");
+            }
+           document.write("<br>");
+       } 
+    }
+
+</script>
+</html>

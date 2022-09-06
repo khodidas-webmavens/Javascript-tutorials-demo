@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>White space or Blank space validation using  javascript regexp </title>
+    <style>
+        form {
+            width: 350px;
+            margin: auto;
+        }
+
+        div {
+            margin: 5px;
+        }
+
+        label {
+            width: 200px;
+            display: block;
+            float: left;
+            font-size: 20px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        button {
+            width: auto;
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            box-shadow: 0px 0px 2px 1px gray;
+        }
+
+        #alert {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="post" keyup="validate()">
+        <h1>login Form</h1>
+        <div>
+            <label for="username">username</label>
+            <input id="username" type="text" name="username" onkeyup="white(this.value)">
+
+
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="confirm_password" id="password" onkeyup="white(this.value)">
+
+        </div>
+        <div>
+            <label>confirm password</label>
+            <input type="password" name="confirm_password" id="confirm_password" onkeyup="check(this)">
+            <br>
+            <p id="alert"></p>
+
+        </div>
+        <div>
+            <button type="button">submit</button>
+
+        </div>
+    </form>
+
+</body>
+<script type="text/javascript">
+    var patten = /\s/g;
+    var alert = document.getElementById('alert');
+    function white(data) {
+        var isSpace = patten.test(data);
+        if(isSpace){
+            alert.innerText = "space is not allowd"
+        }else{
+            alert.innerText = "";
+        }
+    }
+  
+</script>
+
+</html>

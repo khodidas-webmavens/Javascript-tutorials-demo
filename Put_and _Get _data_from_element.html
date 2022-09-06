@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Put and Get data from the HTML element</title>
+</head>
+<body>
+   
+    <div id="main">
+        Hello user Welcome
+    </div>
+    <div class="main">
+         Welcome users
+    </div>
+    <div class="main">
+        Welcome users ????????
+   </div>
+    
+    
+
+</body>
+<script type="text/javascript">
+
+    // in body any get data using id
+
+    // var user =document.getElementById("main").innerHTML;
+    // console.log(user);
+
+    // put the data 
+    // document.getElementById("main").innerHTML="<h1> hello user welcome</h1>";
+
+    // in body any get data using class name
+
+    var user =document.getElementsByClassName("main")[1].innerHTML;
+    console.log(user);
+    // alert(user);
+
+    // document.getElementsByClassName("main")[0].innerHTML="welcome";
+    // document.getElementsByClassName("main")[1].innerHTML="hello user welcome";
+
+       
+</script>
+</html>

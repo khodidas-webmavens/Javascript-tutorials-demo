@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>print() in javascript</title>
+</head>
+
+<body id="body">
+
+    <div>
+        <p id="data">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At minima optio ad ea ipsum molestiae unde esse
+            repudiandae obcaecati fuga asperiores aliquam beatae laudantium rem commodi accusamus qui nesciunt ducimus
+            placeat consequatur odio, illo dolor? Et corrupti totam temporibus id magni perspiciatis nisi ratione
+            laboriosam earum soluta possimus minus, similique commodi aliquam recusandae placeat quo, laborum ut vel.
+            Ipsam temporibus rem molestiae dignissimos fuga rerum sed earum et dolorem in eum suscipit facere expedita
+            maiores vel cum, sint accusamus consequatur repellendus iste illum ab? Consectetur voluptatum incidunt eius
+            voluptate fugiat praesentium dignissimos saepe. Eligendi dolore rerum, accusamus sunt assumenda, modi
+            corrupti soluta laboriosam commodi at maxime. Nobis, sapiente. Ullam, neque. Nisi architecto voluptatibus
+            modi assumenda recusandae reiciendis non molestias. Modi quisquam numquam mollitia optio esse est vitae
+            sequi magni asperiores, veniam, voluptas dolorum sunt non. Temporibus explicabo in eligendi saepe tenetur
+            soluta delectus, adipisci a atque voluptate ipsa nesciunt expedita, voluptates impedit provident asperiores
+            deleniti quod fuga quibusdam ipsum harum, sequi reiciendis accusamus aperiam. Beatae sequi voluptas, facere
+            vitae, ad fugit deleniti soluta, blanditiis deserunt illo enim nulla et culpa assumenda libero voluptate!
+            Provident, cupiditate. Dignissimos, officiis autem eum ad obcaecati rem vero qui temporibus? Dignissimos
+            ipsam obcaecati recusandae non reprehenderit nam cumque eligendi, deserunt blanditiis aperiam! Quae impedit
+            facilis harum alias vero, itaque sit sed voluptas? Accusantium minus ipsum natus velit cumque excepturi
+            culpa ex maxime obcaecati, dolorum atque incidunt, ab adipisci reprehenderit tempore doloremque vero ducimus
+            deserunt beatae est? Magnam officia doloribus esse saepe itaque distinctio dolor animi officiis, ab
+            deleniti quis corporis non velit sint nisi, itaque officiis rerum veniam eligendi vitae.
+        </p>
+        <h1>description</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt explicabo, necessitatibus tempore
+            eveniet, fugiat similique delectus, assumenda provident veniam sit ullam voluptatem doloribus. Voluptatibus
+            nam at vitae, et dicta libero ipsum tempore dolorem, culpa, earum porro reiciendis aperiam minima! Ratione,
+            est ea libero autem natus placeat reprehenderit totam, ex, voluptatibus minus eum omnis voluptatum vel
+            magnam optio temporibus et molestias cumque. Temporibus dolorum iure voluptas modi vel molestiae soluta,
+            quas iusto, aliquam deleniti qui assumenda. Rem corrupti, enim, velit reiciendis commodi doloribus in sunt
+            suscipit minus perspiciatis quibusdam, dolore accusantium vel similique officiis laudantium ipsam voluptatum
+            ea fugit maiores nemo iusto pariatur quidem. Maxime adipisci, unde placeat sit magni consequuntur veritatis
+            similique cum dolores atque cupiditate voluptas omnis nulla ab dolore quibusdam aliquid nam illum dolorem in
+            ut at! Ipsa, quia nisi quisquam commodi cupiditate accusamus magnam minus alias delectus accusantium, soluta
+            modi laboriosam. Ducimus asperiores placeat ipsam recusandae consequuntur cum facere est doloremque odit
+            eius perspiciatis repellendus aperiam dicta, fugit vel tenetur, obcaecati excepturi nulla quaerat architecto
+            qui, nostrum quibusdam. Error velit sequi vitae rem assumenda repellat consequatur quis eos in earum iste
+            dolores magnam harum vero, eius quod! Quos nemo velit vero similique iure, eligendi totam omnis?
+        </p>
+    </div>
+    <button onclick="printpage()">Printpage</button>
+</body>
+
+<script type="text/javascript">
+    function printpage() {
+        var body = document.getElementById('body').innerHTML;
+        var data = document.getElementById('data').innerHTML;
+        document.getElementById('body').innerHTML = data;
+        window.print()
+        
+        var body = document.getElementById('body').innerHTML = body;
+
+    }
+</script>
+
+</html>

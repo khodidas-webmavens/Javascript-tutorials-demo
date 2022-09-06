@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java-script variable</title>
+</head>
+<body>
+    
+    <button onclick="test()">try it!</button>
+    <h1 id="user"></h1>
+
+</body>
+<script type="text/javascript">
+
+function test(){
+    setTimeout(
+        function(){
+            // alert("Hello");
+            var name = prompt("enetr your name","")
+            document.getElementById('user').innerHTML = name;
+        },
+        2000
+    )
+}
+
+        
+</script>
+</html>

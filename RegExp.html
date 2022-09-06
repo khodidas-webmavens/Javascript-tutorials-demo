@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExp  (Regular Expression) in JavaScript</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    // var pattern = /[a-z][0-9]/i;
+    // var str = "hey123";
+    // console.log(pattern.exec(str));
+    // console.log(pattern.test(str));
+
+
+    // var pattern = new RegExp('[a-z][0-9]','i');
+    // console.log(pattern.toString());
+
+
+    //add redtment regexp in using
+    var pattern = new RegExp('(?=.*[A-Z])');
+    var str = "heyD123";
+    console.log(pattern.test(str));    
+    
+</script>
+</html>
